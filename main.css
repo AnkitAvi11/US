@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4{
+    font-family: arial;
+    margin: 0; 
+}
+.wrapper{
+    margin: 0 auto;
+    background: dodgerblue;
+    padding: 0px 80px;
+}
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav ul{
+    float: right;
+    margin: 0;
+    font-size: 20px;
+    font-family: dosis;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+}
+nav ul li > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+nav ul li > a:hover{
+    background: black;
+    color: white;
+}
+.ham{
+    display: none;
+}
+.ham .fa{
+    font-size: 26px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+.ham .fa:hover{
+    color: lightgrey;
+}
+.ham-content{
+    background: url(https://github.com/AnkitAvi1311/US/blob/master/profile.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    font-size: 25px;
+    height: 100%;
+    font-family: dosis;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    transition: width .4s linear;
+}
+.close::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.ham-content div{
+    padding: 5px;
+}
+.close   > .fa{
+    cursor: pointer;
+    color: white;
+    font-size: 26px;
+    float: right;
+    transition: color .2s linear;
+}
+.close>.fa:hover{
+    color: red;
+}
+.profile{
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.profile img{
+    width: 50%;
+    height: 50%;
+}
+
+.profile ul{
+    padding: 0;
+    font-size: 18px;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+.menu-content ul{
+    margin-top: 10px;
+}
+.menu-content ul li{
+    padding: 10px 10px;
+    margin-top: 5px;
+    background: rgba(218, 218, 218, .2)
+}
+.profile ul li .fa{
+    margin-right: 10px;
+}
+/* media query for portrait mode */
+@media screen and (max-width: 600px){
+    .ham{
+        display: block;
+    }
+    .main{
+        display: none;
+    }
+    .wrapper{
+        padding: 0px;
+    }
+}
