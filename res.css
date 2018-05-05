@@ -1,20 +1,21 @@
-*{
-    box-sizing: border-box;
-}
-
-/* for mobile screens */
 .row::after{
-    display: block;
     content: "";
+    display: block;
     clear: both;
 }
-[class*="col-"]{
-    float: left;
-    padding: 15px;
-    width: 100%;
+.row{
+    padding: 10px;
 }
-/* for tablets and larger screen phones */
-@media screen and (min-width: 680px){
+/* For mobile screens */
+
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+/* for tablets and mobile phones with larger displays */
+@media screen and (min-width: 600px){
     .col-m-1{width: 8.33%;}
     .col-m-2{width: 16.66%;}
     .col-m-3{width: 25%;}
@@ -28,7 +29,9 @@
     .col-m-11{width: 91.66%;}
     .col-m-12{width: 100%;}
 }
-@media screen and (min-width: 780px){
+
+/* for the desktop screens or similar size screens */
+@media screen and (min-width: 600px){
     .col-1{width: 8.33%;}
     .col-2{width: 16.66%;}
     .col-3{width: 25%;}

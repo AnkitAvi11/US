@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    background: rgb(86, 96, 112);
+    transition: all .2s ease-in;
+}
+nav{
+    height: 66px;
+    width: 100%;
+    background: rgb(46, 54, 68);
+    box-shadow: 0px 1px 2.5px black;
+}
+.box{
+    width: 50px;
+    height: 100%;
+    float: left;
+    padding: 19px 10px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.first,.second,.third{
+    height: 2.5px;
+    width: 100%;
+    display: block;
+    margin-top: 6px;
+    background: white;
+}
+.chats{
+    height: 60px;
+    width: 180px;
+    margin: 0px auto;
+}
+.newr{
+    height: 100%;
+}
+.newr::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.middle{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 23px;
+    font-family: arial;
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+.middle:first-child::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    top: 101%;
+    left: 0;
+
+}
+.nav-content{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 80%;
+    background: rgb(86, 96, 112);
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: all .2s ease-in-out;
+}
+.profile-pic{
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.prof-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(330deg, purple, dodgerblue);
+    opacity: .3;
+}
+.name{
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    padding: 10px;
+}
+.info{
+    font-family: 'open sans', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.phone{
+    font-family: 'open-sans', sans-serif;
+    color: white;
+    margin-top: 5px;
+}
+.profile-pic::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.right{
+    height: 80px;
+    padding: 10px 0px;
+    position: absolute;
+    background: transparent;
+    top: 100%;
+    left: 85%;
+    transform: translateY(-100%);
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+}
+.body-overlay{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.account{
+    border-bottom: 1px solid grey;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+.wrapper{
+    margin-top: 10px;
+    height: 55px;
+    width: 100%;
+    padding: 0px 10px;
+}
+.dp{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    float: left;
+}
+.wrapper > .info{
+    margin-top: 14px;
+    margin-left: 18px;
+    float: left;
+}
+
+.mycontent{
+    padding: 15px;
+}
+
+.mycontent > ul {
+    margin: 0;
+    padding: 0;
+}
+.mycontent > ul > li{
+    list-style-type: none;
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    padding: 15px;
+}
+.fas {
+    margin-right: 20px;
+    width: 30px;
+}
+
+.foraccount{
+    height: 131px;
+}
+.rotate{
+    transform: rotateZ(-180deg) translate(50%,-60%);
+}
+.fornav{
+    transform: translateX(0px);
+}
+.forbody{
+    opacity: 0.5;
+}
