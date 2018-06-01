@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 500px;
+    background: dodgerblue;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container > h2{
+    margin: 0;
+    font-family: 'Roboto';
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.myform{
+    padding: 20px;
+    margin-top: 10px;
+}
+.input{
+    margin-bottom: 30px;
+    position: relative;
+}
+.myform .input input{
+    width: 100%;
+    position: relative;
+    padding: 8px;
+    background: none;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    transition: all .3s ease;
+    z-index: 2;
+    border-bottom: 1px solid black;
+}
+.myform div label{
+    position: absolute;
+    left: 8px;
+    z-index: 0;
+    cursor: text;
+    font-size: 16px;
+    top: 8px;
+    font-family:'Roboto';
+    transition: all .3s ease;
+}
+input:focus,input:valid{
+    outline: none;
+    border-bottom-color: white;
+}
+.myform input:focus+label, input:valid+label{
+    top: -15px;
+    font-size: 12px;
+    cursor: default;
+    color: white;
+}
+input[type="submit"]{
+    padding: 10px 50px;
+    border: none;
+    transition: all .3s ease-in-out;
+    background: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+input[type="submit"]:hover{
+    background: white;
+    color: black;
+}
+.btn{
+    text-align: right;
+}
+.tasks{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#mylist{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Roboto';
+}
+#mylist li{
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#mylist li div:first-child{
+    margin-bottom: 15px;
+}
+.delete{
+    position: absolute;
+    top: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 10px;
+    padding: 5px;
+    background: white;
+}

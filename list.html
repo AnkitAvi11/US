@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+    <head>
+        <title>Shopping List</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="list.css">
+        <script src="list.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>To-Do App</h2>
+            <div>
+
+                <form class="myform" id="form" method="POST" action="action.php">
+    
+                    <div class="input">
+                        <input type="text" required="required" id="taskvalue">
+                        <label for='todo'>Enter your task</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" required="required" id="timevalue">
+                        <label for='todo'>Time Required</label>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Add Task" id="submit">
+                    </div>
+                </form>
+    
+            </div>
+
+            <div class="tasks">
+                <ul id="mylist">
+        
+                </ul>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
