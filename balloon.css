@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+.cloud{
+    height: 400px;
+    width: 400px;
+    background: skyblue;
+    margin: 130px auto;
+    border-radius: 50%;
+    position: relative;
+}
+.balloon{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background: rgb(255, 97, 123);
+    border-radius: 50%;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,50%);
+    border: 1px solid black;
+}
+.shade1{
+    height:250px;
+    top:0;
+    width: 70%;
+    position: absolute;
+    background: pink;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%,0px);border: 1px solid black;
+}
+.shade2{
+    height: 250px;
+    top:0;
+    width: 35%;
+    background: rgb(255, 97, 123);border: 1px solid black;
+    position: absolute;
+    lefT: 50%;
+    transform: translate(-50%, 0px);
+    border-radius: 50%;
+}
+.balloon::after{
+    content:"";
+    height: 48px;
+    width: 90px;
+    background: black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,100%);    
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.wire{
+    height: 65px;
+    position: absolute;
+    top: 97%;
+    width: 2px;
+    background: black;
+    left: 35%;
+    transform: rotateZ(-5deg);
+    border-top-right-radius: 50%;
+}
+.wire::after{
+    content: "";
+    height: 70px;
+    position: absolute;
+    top: 9%;
+    width: 2px;
+    background: black;
+    left: 73px;
+    transform: rotateZ(12deg);
+    border-top-left-radius: 50%;
+}
+.sky{
+    width: 150px;
+    height: 40px;
+    background: white;
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    border-top-right-radius: 85px 30px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 55px 35px;
+    border-bottom-right-radius: 85px 35px;
+}
+.sky::after{
+    content: "";
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,10%);
+}
+.sun{
+    height: 60px;
+    width: 60px;
+    background: yellow;
+    border-radius: 100%;
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    box-shadow: 0px 0px 20px 5px yellow;
+}

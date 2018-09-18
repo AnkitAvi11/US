@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: relative;
+    margin: 200px auto;
+    transform: rotateZ(-45deg);
+    box-shadow: 0px 0px 20px 10px lightgrey;
+    animation-name: heart-beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    bottom: 100%;
+    transform: translateY(50%);
+    border-radius: 50%;
+}
+.container::before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    transform: translate(-50%);
+    background: red;
+    content:"";
+    border-radius: 50%;
+}
+@keyframes heart-beat{
+    50%{
+        transform: rotateZ(-45deg) scale(1.5);
+    }
+}
